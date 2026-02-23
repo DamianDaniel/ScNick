@@ -1,0 +1,17 @@
+name: NickPlugin
+version: 2.0.0
+main: dev.nickplugin.NickPlugin
+api-version: '1.21'
+description: Nickname plugin - changes player names everywhere (except nametag)
+authors: Damian
+
+commands:
+  nick:
+    description: Set or remove a player's nickname
+    usage: /nick <player> <nick|reset>
+    permission: nickplugin.nick
+
+permissions:
+  nickplugin.nick:
+    description: Allows using /nick
+    default: op
